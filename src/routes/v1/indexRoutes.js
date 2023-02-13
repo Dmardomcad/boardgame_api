@@ -9,3 +9,5 @@ router.get("/", (req,res, next)=>{
 
 router.use("/boardgames", boardgamesRoutes.router)
 router.use("/users", usersRoutes.router)
+
+module.exports.router = router
