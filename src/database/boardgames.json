@@ -3,38 +3,30 @@
         {
             "id":"1",
             "name": "Juego de la oca",
-            "image": null,
             "players": "1-4",
             "duration": "30min",
-            "difficulty":"easy",
-            "favorites": 0
+            "difficulty":"easy"
         },
         {
             "id":"2",
             "name": "Parchis",
-            "image": null,
             "players": "1-4",
             "duration": "40min",
-            "difficulty":"easy",
-            "favorites": 0
+            "difficulty":"easy"
         },
         {
             "id":"3",
             "name": "Warhammer 40.000",
-            "image": null,
             "players": "2",
             "duration": "2-4 horas",
-            "difficulty":"hard",
-            "favorites": 0
+            "difficulty":"hard"
         },
         {
             "id":"4",
             "name": "Pequeñas grandes mazmorras.",
-            "image": null,
             "players": "4",
             "duration": "1.5 horas",
-            "difficulty":"medium",
-            "favorites": 0
+            "difficulty":"medium"
         }
     ]
 }

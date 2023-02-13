@@ -10,6 +10,6 @@ router
 router.route("/:boardgame")
     .get(boardgamesController.getOneBoardgame)
     .delete(boardgamesController.deleteOneBoardgame)
-    .put()
+    .put(boardgamesController.updateOneBoardgame)
 
 module.exports.router = router
