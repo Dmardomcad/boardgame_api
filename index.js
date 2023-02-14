@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const v1 = require('./routes/v1/indexRoutes')
+const v1 = require('./src/routes/v1/indexRoutes')
 
 // Parse incoming requests data to JSON
 app.use(express.json())

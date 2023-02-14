@@ -1,13 +1,14 @@
-const express = require("express")
+const express = require('express')
 const router = express.Router()
-const boardgamesController = require("../../controllers/boardgamesController")
+const boardgamesController = require('../../controllers/boardgamesController')
 
 router
-    .route("/")
+    .route('/')
     .get(boardgamesController.getAllBoardgames)
     .post(boardgamesController.createOneBoardgame)
 
-router.route("/:boardgame")
+router
+    .route('/:game')
     .get(boardgamesController.getOneBoardgame)
     .delete(boardgamesController.deleteOneBoardgame)
     .put(boardgamesController.updateOneBoardgame)

@@ -1,32 +1,11 @@
 {
-    "boardgames":[
-        {
-            "id":"1",
-            "name": "Juego de la oca",
-            "players": "1-4",
-            "duration": "30min",
-            "difficulty":"easy"
-        },
-        {
-            "id":"2",
-            "name": "Parchis",
-            "players": "1-4",
-            "duration": "40min",
-            "difficulty":"easy"
-        },
-        {
-            "id":"3",
-            "name": "Warhammer 40.000",
-            "players": "2",
-            "duration": "2-4 horas",
-            "difficulty":"hard"
-        },
-        {
-            "id":"4",
-            "name": "Pequeñas grandes mazmorras.",
-            "players": "4",
-            "duration": "1.5 horas",
-            "difficulty":"medium"
-        }
-    ]
+  "boardgames": {
+    "warhammer_40000": {
+      "id": "cc1e9229-f823-45fd-a7ee-1fae231aae7a",
+      "name": "warhammer 40000",
+      "players": "2",
+      "duration": "180 minutos",
+      "difficulty": "Hard"
+    }
+  }
 }
