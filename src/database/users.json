@@ -1,16 +1,25 @@
 {
-    "users": [
-        {
-            "id":"1",
-            "username": "Sephirot420",
-            "email": "sephi@gmail.com",
-            "password": "hola1234567"
-        },
-        {
-            "id":"2",
-            "username": "carlitos23",
-            "email": "carlitos@manzano.es",
-            "password": "maza6666"
-        }
-    ]
+  "users": {
+    "Sephirot420": {
+      "username": "Sephirot420",
+      "email": "sephi@gmail.com",
+      "password": "hola1234567"
+    },
+    "carlitos23": {
+      "username": "carlitos23",
+      "email": "carlitos@manzano.es",
+      "password": "maza6666"
+    },
+    "pepejuan2": {
+      "id": "a4a33ecc-b13a-4a92-9779-b719e7f8e522",
+      "username": "pepejuan22",
+      "email": "pepito22@gmail.com",
+      "password": "12342"
+    },
+    "aaa": {
+      "id": "e52a2392-4876-42fa-9474-aa82d7a49683",
+      "username": "aaaasd@gmail.com",
+      "email": "aasdaa"
+    }
+  }
 }

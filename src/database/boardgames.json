@@ -1,11 +1,32 @@
 {
   "boardgames": {
     "warhammer_40000": {
-      "id": "cc1e9229-f823-45fd-a7ee-1fae231aae7a",
+      "id": "46f6b698-4244-46ee-bf67-1ad7dd098d7e",
       "name": "warhammer 40000",
       "players": "2",
       "duration": "180 minutos",
       "difficulty": "Hard"
+    },
+    "poker": {
+      "id": "ce8f0985-3730-459e-b5e3-960071d77043",
+      "name": "pokeaar",
+      "players": "3",
+      "duration": "23",
+      "difficulty": "hard"
+    },
+    "la_oca": {
+      "id": "e9b155c6-9043-451c-8a98-01e062fccccb",
+      "name": "la oca",
+      "players": "2-4",
+      "duration": "20 minutos",
+      "difficulty": "easy"
+    },
+    "parchis": {
+      "id": "90705931-654a-4a47-b8ea-ba2ec27bd7fe",
+      "name": "parchis",
+      "players": "2-4",
+      "duration": "20 minutos",
+      "difficulty": "fácil"
     }
   }
 }

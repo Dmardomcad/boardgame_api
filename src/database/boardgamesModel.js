@@ -12,14 +12,13 @@ const getOneBoardgame = name => {
 const createOneBoardgame = boardgame => {
     let savedName = boardgame.name.toLowerCase()
     savedName = savedName.replace(/ /g,"_")
-    console.log(savedName)
     data.boardgames[savedName] = boardgame
     
     //Write game to json file
-    fs.writeFile(
+    fs.writeFileSync(
         './src/database/boardgames.json',
-        JSON.stringify(data, null, 2),
-        'utf-8',
+        JSON.stringify(data, null, 2),{encoding: 'utf8'}
+        ,
         err => {
             throw new Error('Error writing to file')
         }
@@ -32,7 +31,7 @@ const deleteOneBoardgame = name =>{
     delete data.boardgames[name]
 
     // Delete game from json file
-    fs.writeFile(
+    fs.writeFileSync(
         './src/database/boardgames.json',
         JSON.stringify(data, null, 2),
         'utf-8',
@@ -49,7 +48,7 @@ const updateOneBoardgame = (name, newName, newPlayers, newDuration,newDifficulty
     boardgame.players = newPlayers
     boardgame.duration = newDuration
     boardgame.difficulty = newDifficulty
-    fs.writeFile(
+    fs.writeFileSync(
         './src/database/boardgames.json',
         JSON.stringify(data, null, 2),
         'utf-8',
