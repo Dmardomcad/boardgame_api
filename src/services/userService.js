@@ -31,8 +31,9 @@ const insertOneUser = (username, email, password) => {
 
 }
 
-const deleteOneUser = () => {
-    return
+const deleteOneUser = id => {
+    const user = User.deleteOneUser(id)
+    return user
 }
 
 const updateOneUser = (id, username, newUsername, newEmail, newPassword) => {

@@ -54,8 +54,13 @@ const updateOneUser = (req, res) => {
 
 
 const deleteOneUser = (req, res) => {
-    userService.deleteOneUser(req.params.userId)
-    res.send(`Delete user ${req.params.userId}`)
+    const { user } = req.params
+    const oneUser = userService.deleteOneUser(user)
+    if(!oneUser){
+        res.status(404).send('User not found')
+    }
+    res.send(oneUser)
+
 }
 
 module.exports = {
