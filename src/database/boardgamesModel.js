@@ -10,6 +10,7 @@ const getOneBoardgame = name => {
 }
 
 const createOneBoardgame = boardgame => {
+    // normalizamos el nombre que se va a utilizar luego como parámetro, pasando todo a minúsculas y reemplazando espacios con _
     let savedName = boardgame.name.toLowerCase()
     savedName = savedName.replace(/ /g,"_")
     data.boardgames[savedName] = boardgame

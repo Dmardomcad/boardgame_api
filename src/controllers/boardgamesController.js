@@ -7,7 +7,7 @@ const getAllBoardgames = (req, res, next)=>{
         res.status(404).send('No games found')
         return
     }
-    res.send(allBoardgames)
+    res.status(200).send(allBoardgames)
 }
 
 const createOneBoardgame = (req, res, next)=>{
@@ -20,10 +20,10 @@ const createOneBoardgame = (req, res, next)=>{
     }
     const newBoardgame = boardgamesServices.createOneBoardgame(name, players, duration, difficulty)
     if(!newBoardgame){
-        res.status.send('Game not created')
+        res.status(400).send('Game not created')
         return
     }
-    res.send(newBoardgame)
+    res.status(200).send(newBoardgame)
 }
 
 const getOneBoardgame = (req, res, next) => {
@@ -34,7 +34,7 @@ const getOneBoardgame = (req, res, next) => {
         res.status(404).send('Boardgame not found')
         return
     }
-    res.send(oneBoardGame)
+    res.status(200).send(oneBoardGame)
 }
 
 const deleteOneBoardgame = (req, res, next) => {
@@ -43,7 +43,7 @@ const deleteOneBoardgame = (req, res, next) => {
     if (!oneBoardGame){
         res.status(404).send('Boardgame not found')
     }
-    res.send(oneBoardGame)
+    res.status(200).send(oneBoardGame)
 }
 
 const updateOneBoardgame = (req, res, next) => {
@@ -58,7 +58,7 @@ const updateOneBoardgame = (req, res, next) => {
         res.status(404).send('Game not found')
         return
     }
-    res.send(oneBoardGame)
+    res.status(200).send(oneBoardGame)
 }
 
 module.exports = {

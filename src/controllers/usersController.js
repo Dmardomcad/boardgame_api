@@ -6,8 +6,7 @@ const getAllUsers = (req, res) => {
         res.status(404).send('No users found')
         return
     }
-    res.send(allUsers)
-
+    res.satus(200).send(allUsers)
 }
 
 const getOneUser = (req, res) => {
@@ -18,7 +17,7 @@ const getOneUser = (req, res) => {
         res.status(404).send('User not found')
         return
     }
-    res.send(oneUser)
+    res.status(200).send(oneUser)
 
 }
 
@@ -30,10 +29,10 @@ const insertOneUser = (req, res) => {
     }
     const newUser = userService.insertOneUser(username, email, password)
     if(!newUser){
-        res.status.send('User not created')
+        res.status(400).send('User not created')
         return
     }
-    res.send(newUser)
+    res.status(200).send(newUser)
 }
 
 
@@ -49,7 +48,7 @@ const updateOneUser = (req, res) => {
         res.status(404).send('User not found')
         return
     }
-    res.send(oneUser)
+    res.status(200).send(oneUser)
 }
 
 
@@ -59,8 +58,7 @@ const deleteOneUser = (req, res) => {
     if(!oneUser){
         res.status(404).send('User not found')
     }
-    res.send(oneUser)
-
+    res.status(200).send(oneUser)
 }
 
 module.exports = {
